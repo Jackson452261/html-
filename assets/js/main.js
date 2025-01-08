@@ -227,3 +227,14 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+ // 禁用右鍵選單
+ document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+  console.log('右鍵功能已禁用，無法下載圖片');
+});
+
+// 禁用拖曳圖片
+document.addEventListener('dragstart', function (e) {
+  e.preventDefault();
+});
