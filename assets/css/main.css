@@ -1273,3 +1273,9 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+#rexcontact-section .container {
+  margin-left: 280px; /* 調整這個值以匹配你的側邊欄寬度 */
+  width: calc(100% - 280px); /* 減去側邊欄寬度 */
+  max-width: none;
+}
