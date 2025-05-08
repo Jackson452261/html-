@@ -1310,3 +1310,41 @@ section,
     width: calc(100% - 300px);
   }
 }
+
+/* 確保所有元素的寬度計算包含 padding 和 border */
+* {
+  box-sizing: border-box;
+}
+
+/* 確保表單容器在所有設備上都有足夠的寬度 */
+#rexcontact-section .wrap-thecontentform {
+  width: 100%;
+  padding: 30px;
+}
+
+/* 確保表單在所有設備上都有足夠的寬度 */
+#contact-form {
+  width: 100%;
+}
+
+/* 確保輸入欄位在所有設備上都有足夠的寬度 */
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* 在小螢幕上增加字體大小，使 placeholder 更容易閱讀 */
+@media (max-width: 576px) {
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 14px;
+  }
+}
