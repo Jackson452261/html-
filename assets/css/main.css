@@ -1279,3 +1279,16 @@ section,
   width: calc(100% - 280px); /* 減去側邊欄寬度 */
   max-width: none;
 }
+/*處理contact-form的mobile狀態*/
+
+@media (max-width: 1199px) {
+  #rexcontact-section {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  
+  #rexcontact-section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
