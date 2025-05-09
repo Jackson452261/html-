@@ -231,7 +231,7 @@
  // 禁用右鍵選單
  document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
-  console.log('右鍵功能已禁用，無法下載圖片');
+  //console.log('右鍵功能已禁用，無法下載圖片');
 });
 
 // 禁用拖曳圖片
