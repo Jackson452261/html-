@@ -461,79 +461,86 @@
     
   </main>
 
-  <section id="rexcontact-section" style="background: linear-gradient(#303030, rgba(48, 48, 48, .9), rgba(48, 48, 48, 1), #303030), url(image/random/5.jpg) no-repeat center; background-size: cover; padding: 80px 0;">
-    <div class="container" style="max-width: 800px; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;">
-      <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
-        <!-- Contact Information (左側) -->
-        <div class="col-lg-5 col-md-12 wrap-theform" style="background-color: #303030; padding: 40px; border-radius: 8px; margin-bottom: 30px;">
-          <div class="title-contact">
-            <h2 style="color: white; font-size: 30px;   position: relative; left: 50px;">
-              Contact Information
-              <span style="position: absolute; top: -15px; left: 0; width: 40px; height: 4px; background-color: #ffc107; display: block;"></span>
-            </h2>
-  
-            <ul class="sosmed-list" style="list-style: none; padding: 0; display: flex; gap: 15px; margin-top: 30px;">
-              <li>
-                <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #ffc107; border-radius: 50%;">
-                  <i class="bi bi-facebook" style="color: #333;" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #ffc107; border-radius: 50%;">
-                  <i class="bi bi-instagram" style="color: #333;" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #ffc107; border-radius: 50%;">
-                  <i class="bi bi-twitter" style="color: #333;" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
-  
-            <hr style="border-color: #444; margin: 30px 0;">
+  <section id="rexcontact-section"
+  style="background: linear-gradient(#303030, rgba(48, 48, 48, .9), rgba(48, 48, 48, 1), #303030), url(image/random/5.jpg) no-repeat center; background-size: cover;">
+
+  <div class="container" id="wrap-formrex">
+      <div class="row">
+          <!-- Contact Information (左側 50%) -->
+          <div class="col-lg-5 wrap-theform">
+              <div class="title-contact">
+                  <h3>Contact Information</h3>
+
+                  <ul class="list-info">
+                      <li>
+                          <div class="mini-info">
+                              <span class="material-icons">
+                                  place
+                              </span>
+                              <p class="p-1">Taiwan</p>
+                              <p class="p-2"> </p>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="mini-info">
+                              <span class="material-icons">
+                                  attach_email
+                              </span>
+                              <p class="p-1">Mail Address</p>
+                              <p class="p-2">a411757@gmail.com</p>
+                          </div>
+                      </li>
+                  </ul>
+                  <ul class="sosmed-list">
+                      <li>
+                          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </li>
+                      <li>
+                          <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </div>
-  
-        <!-- Contact Form (右側) -->
-        <div class="col-lg-7 col-md-12 wrap-thecontentform" style="padding: 30px; width: 100%; box-sizing: border-box;">
-          <form id="contact-form" style="width: 100%;">
-            <!-- First Name -->
-            <div style="width: 100%; margin-bottom: 25px;">
-              <h2 style="color:antiquewhite">姓名</h2>
-              <input type="text" name="from_name" placeholder="輸入名字" class="input-field" required
-                style="width: 100%; padding: 15px; background-color: transparent; border: none; border-bottom: 1px solid #ccc; color: white; font-size: 16px; outline: none; box-sizing: border-box;">
-            </div>
-            
-            <!-- Email -->
-            <div style="width: 100%; margin-bottom: 25px;">
-              <h2 style="color:antiquewhite">Email</h2>
-              <input type="email" name="from_email" placeholder="輸入聯絡E-mail" class="input-field" required
-                style="width: 100%; padding: 15px; background-color: transparent; border: none; border-bottom: 1px solid #ccc; color: white; font-size: 16px; outline: none; box-sizing: border-box;">
-            </div>
-            
-            <!-- Phone -->
-            <div style="width: 100%; margin-bottom: 25px;">
-              <h2 style="color:antiquewhite">電話號碼</h2>
-              <input type="tel" name="from_phone" placeholder="輸入電話號碼" class="input-field"
-                style="width: 100%; padding: 15px; background-color: transparent; border: none; border-bottom: 1px solid #ccc; color: white; font-size: 16px; outline: none; box-sizing: border-box;">
-            </div>
-            
-            <!-- Message -->
-            <div style="width: 100%; margin-bottom: 25px;">
-              <h2 style="color:antiquewhite">訊息</h2>
-              <textarea name="message" placeholder="訊息" class="input-field" rows="4" required
-                style="width: 100%; padding: 15px; background-color: transparent; border: none; border-bottom: 1px solid #ccc; color: white; font-size: 16px; outline: none; resize: none; box-sizing: border-box;"></textarea>
-            </div>
-            
-            <div style="width: 100%; margin-top: 30px;">
-              <button type="submit" class="submit-button" 
-                style="background-color: #f8f9fa; color: #dc3545; padding: 12px 30px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: bold;">發送訊息</button>
-            </div>
-          </form>
-        </div>
+
+          <!-- Contact Form (右側 50%) -->
+          <div class="col-lg-7 wrap-thecontentform">
+              <form id="contact-form">
+                  <!-- First Name -->
+                  <div class="col-6">
+                      <input type="text" name="from_name" placeholder="輸入名字" class="input-field" required>
+                  </div>
+              
+                  <!-- Email -->
+                  <div class="col-12">
+                      <input type="email" name="from_email" placeholder="輸入聯絡E-mail" class="input-field" required>
+                  </div>
+              
+                  <!-- Phone -->
+                  <div class="col-12">
+                      <input type="tel" name="from_phone" placeholder="輸入電話號碼" class="input-field">
+                  </div>
+              
+                  <!-- Message -->
+                  <div class="col-12">
+                      <textarea name="message" placeholder="訊息" class="input-field" rows="4" required></textarea>
+                  </div>
+              
+                  <div class="col-12">
+                  <button type="submit" 
+                  class="submit-button btn btn-lg bg-primary-subtle text-danger px-5 py-3 custom-btn">發送訊息</button>
+                  </div>
+              </form>
+              
+          </div>
       </div>
-    </div>
-  </section>
+  </div>
+</section>
+
+
+
   <div class="container" id="wrap-formrex">
       <div class="row">
           
