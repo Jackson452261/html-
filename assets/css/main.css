@@ -1280,6 +1280,7 @@ section,
 
    display: flex;
    justify-content: center;
+   align-items: center;
  }
 
   
@@ -1297,3 +1298,49 @@ section,
  }
 
 
+.font-ig{
+  position: relative;
+  top: 15px; 
+  color: #FC427B;
+}
+
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(20, 157, 221, 0.1); /* 淡藍色背景，透明度10% */
+  border: 1px solid rgba(20, 157, 221, 0.3); /* 淡藍色邊框 */
+  border-radius: 5px; /* 圓角 */
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease; /* 平滑過渡效果 */
+}
+
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  background-color: rgba(20, 157, 221, 0.2); /* 聚焦時背景色稍深 */
+  border-color: #149ddd; /* 聚焦時邊框顏色更明顯 */
+  box-shadow: 0 0 8px rgba(20, 157, 221, 0.5); /* 聚焦時添加陰影 */
+  outline: none;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* 半透明白色 */
+}
+
+#contact-form .submit-button {
+  background-color: #149ddd;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
