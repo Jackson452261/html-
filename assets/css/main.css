@@ -1271,4 +1271,29 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
  
+
+/*Contact聯絡資訊區塊*/
+
  
+
+ .contact-section{
+
+   display: flex;
+   justify-content: center;
+ }
+
+  
+ .contact-h2{
+
+   color:beige;
+   font-size: 30px;
+ }
+
+ .contact-info{
+
+   color:aliceblue;
+   display: flex;
+   flex-direction: column;
+ }
+
+
