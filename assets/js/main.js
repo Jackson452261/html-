@@ -270,3 +270,38 @@ document.getElementById("contact-form").addEventListener("submit", function(even
             submitButton.disabled = false;
         });
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // 獲取所有portfolio圖片
+  const portfolioImages = document.querySelectorAll('.portfolio-item img');
+  let loadedImages = 0;
+  const totalImages = portfolioImages.length;
+  const loadingElement = document.getElementById('portfolioLoading');
+  
+  // 如果沒有圖片，直接隱藏載入提示
+  if (totalImages === 0) {
+    loadingElement.style.display = 'none';
+  }
+  
+  // 為每張圖片添加載入事件
+  portfolioImages.forEach(img => {
+    // 如果圖片已經載入完成
+    if (img.complete) {
+      imageLoaded();
+    } else {
+      img.addEventListener('load', imageLoaded);
+      img.addEventListener('error', imageLoaded); // 即使載入失敗也計數
+    }
+  });
+  
+  function imageLoaded() {
+    loadedImages++;
+    // 當所有圖片都載入完成時，隱藏載入提示
+    if (loadedImages >= totalImages) {
+      loadingElement.style.display = 'none';
+    }
+  }
+});
