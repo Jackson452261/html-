@@ -4,14 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Kevin網站</title>
+  <title>Kevin攝影作品集 -  攝影作品分享</title>
   <meta name="google-site-verification" content="OO1lcxWNyTkDFF2ENuanNrNaS0LPuGYnCQ1YRlWNg5A" /> <!--google console search驗證-->
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Kevin">
-<meta name="description" content="Kevin的個人攝影作品分享，展示令人驚嘆的自然風景、人像攝影及生活紀實作品，捕捉每一刻的美麗與感動。探索Kevin的創意視野，發現攝影藝術的無限可能。">
-<meta name="keywords" content="Kevin, 攝影作品, 自然風景攝影, 人像攝影, 攝影分享, 攝影藝術, 攝影部落格, 攝影靈感">
-<meta name="robots" content="index, follow">
+  <meta name="author" content="Kevin">
+  <meta name="description" content="Kevin">
+  <meta name="keywords" content="Kevin攝影, MotoGP攝影, 賽車攝影, 馬來西亞MotoGP, 日本MotoGP, 運動攝影, 專業攝影師, 攝影作品集">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Kevin攝影作品集 - MotoGP賽車攝影專業作品分享">
+  <meta property="og:description" content="專業MotoGP賽車攝影作品，收錄馬來西亞與日本站精彩瞬間">
+  <meta property="og:image" content="https://kevinphotoweb.netlify.app/assets/img/my-profile-img.jpg">
+  <meta property="og:url" content="https://kevinphotoweb.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kevin攝影作品集">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kevin攝影作品集 - MotoGP賽車攝影">
+  <meta name="twitter:description" content="專業MotoGP賽車攝影作品，收錄馬來西亞與日本站精彩瞬間">
+  <meta name="twitter:image" content="https://kevinphotoweb.netlify.app/assets/img/my-profile-img.jpg">
   <!-- Favicons -->
  
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -36,6 +48,10 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
    
+  <!-- Performance Optimization -->
+  <link rel="preload" href="assets/img/my-profile-img.jpg" as="image">
+  <link rel="dns-prefetch" href="//plus.unsplash.com">
+  
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <!-- =======================================================
@@ -45,6 +61,31 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kevin",
+    "jobTitle": "專業攝影師",
+    "description": "專業MotoGP賽車攝影師，專注於捕捉賽車運動的精彩瞬間",
+    "url": "https://kevinphotoweb.netlify.app/",
+    "image": "https://kevinphotoweb.netlify.app/assets/img/my-profile-img.jpg",
+    "sameAs": [
+      "https://www.instagram.com/a411757/"
+    ],
+    "knowsAbout": ["攝影", "MotoGP", "賽車攝影", "運動攝影"],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "攝影師",
+      "occupationLocation": {
+        "@type": "Country",
+        "name": "台灣"
+      }
+    }
+  }
+  </script>
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1QC7KW5XMX"></script>
 <script>
@@ -62,8 +103,8 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle "
-      style="width: 150px; height: 150px;">
+      <img src="assets/img/my-profile-img.jpg" alt="Kevin攝影師個人照片" class="img-fluid rounded-circle" 
+      style="width: 150px; height: 150px;" loading="eager" decoding="async">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -96,7 +137,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="https://plus.unsplash.com/premium_photo-1664361480872-6416aab14696?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fFRSQVZFTHxlbnwwfHwwfHx8MA%3D%3D" alt="" data-aos="fade-in" class="">
+      <img src="https://plus.unsplash.com/premium_photo-1664361480872-6416aab14696?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fFRSQVZFTHxlbnwwfHwwfHx8MA%3D%3D" alt="Kevin攝影作品集首頁背景圖" data-aos="fade-in" class="" loading="eager">
 
       <div class="container" data-aos="fade-up" data-aos-delay="50">
         <p>I'm Kevin   <span class="typed" data-typed-items="歡迎來到,我網站"></span></p>
@@ -143,7 +184,7 @@
       
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Malaysia">
                   <div class="portfolio-content h-100">
-                    <img src="/assets/img/MOTOGP馬來西亞/1.png"   class="img-fluid" alt="">  
+                    <img src="/assets/img/MOTOGP馬來西亞/1.png" class="img-fluid" alt="2023馬來西亞MotoGP賽車攝影作品1" loading="lazy" decoding="async">  
                     <div class="portfolio-info">
                       <h4> </h4>
                       <p> </p>
@@ -154,7 +195,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Malaysia">
                   <div class="portfolio-content h-100">
-                    <img src="/assets/img/MOTOGP馬來西亞/2.png"    class="img-fluid" alt="">      
+                    <img src="/assets/img/MOTOGP馬來西亞/2.png" class="img-fluid" alt="2023馬來西亞MotoGP賽車攝影作品2" loading="lazy" decoding="async">      
                     <div class="portfolio-info">
                       <h4> </h4>
                       <p> </p>
@@ -165,7 +206,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Malaysia">
                   <div class="portfolio-content h-100">
-                    <img src="/assets/img/MOTOGP馬來西亞/3.png"    class="img-fluid" alt="">    
+                    <img src="/assets/img/MOTOGP馬來西亞/3.png" class="img-fluid" alt="2023馬來西亞MotoGP賽車攝影作品3" loading="lazy" decoding="async">    
                     <div class="portfolio-info">
                       <h4> </h4>
                       <p> </p>
@@ -178,7 +219,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Malaysia">
                   <div class="portfolio-content h-100">
-                    <img src="/assets/img/MOTOGP馬來西亞/4.png"  class="img-fluid" alt="">    
+                    <img src="/assets/img/MOTOGP馬來西亞/4.png" class="img-fluid" alt="2023馬來西亞MotoGP賽車攝影作品4" loading="lazy" decoding="async">    
                     <div class="portfolio-info">
                       <h4> </h4>
                       <p> </p>
@@ -190,7 +231,7 @@
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Malaysia">
                   <div class="portfolio-content h-100">
-                    <img src="/assets/img/MOTOGP馬來西亞/5.png"  class="img-fluid" alt="">    
+                    <img src="/assets/img/MOTOGP馬來西亞/5.png" class="img-fluid" alt="2023馬來西亞MotoGP賽車攝影作品5" loading="lazy" decoding="async">    
                     <div class="portfolio-info">
                       <h4> </h4>
                       <p> </p>
